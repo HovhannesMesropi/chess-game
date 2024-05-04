@@ -1,0 +1,154 @@
+.view__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: var(--size);
+    width: var(--size);
+    gap: 10px;
+    font-size: 6rem;
+}
+
+.view.view__menu .buttons button {
+    background-color: #3d3d3d;
+    height: 80px;
+    width: 200px;
+}
+
+.view.view__menu .side {
+    display: flex;
+    gap: 20px;
+    font-size: 3rem;
+}
+
+.view.view__menu .side > div {
+    border: 1px solid #cbcbcb;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.view.view__menu .side > div.active {
+    border: 1px solid #cbcbcb;
+    background-color: black;
+    padding: 5px;
+}
+
+.figure.pawn-f {
+    background-image: url(../assets/PWB.png);
+    background-repeat: no-repeat;
+    height: 80%;
+    background-size: contain;
+    background-position: center;
+}
+
+.figure.pawn-ff {
+    background-image: url(../assets/PWF.png);
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+}
+
+.figure.pawn-f {
+    background-image: url(../assets/PWB.png);
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+}
+
+.figure.pawn-b {
+    background-image: url(../assets/PBF.png);
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+}
+
+
+.figure.rock-f {
+    background-image: url(../assets/CWB.png);
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+}
+
+.figure.rock-b {
+    background-image: url(../assets/CWB.png);
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    filter: brightness(0.2);
+}
+
+.figure.horse-f {
+    background-image: url(../assets/HWB.png);
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+}
+
+.figure.horse-b {
+    background-image: url(../assets/HBF.png);
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+}
+
+
+.figure.officer-f {
+    background-image: url(../assets/MWB.png);
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+}
+
+.figure.officer-b {
+    background-image: url(../assets/MBF.png);
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+}
+
+.figure.queen-f {
+    background-image: url(../assets/QWB.png);
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+}
+
+.figure.king-f {
+    background-image: url(../assets/KWB.png);
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+}
+
+.figure.queen-b {
+    background-image: url(../assets/QBF.png);
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+}
+
+.figure.king-b {
+    background-image: url(../assets/KBF.png);
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+}
+
+.active {
+    box-shadow: 0px 0px 0px 3px #ff1b87;
+    z-index: 1;
+}

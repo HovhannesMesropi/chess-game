@@ -1,0 +1,56 @@
+
+:root {
+    --size: 800px;
+    --odd-color: rgb(89 127 157);
+    --even-color: white;
+    --bord-border-color: rgb(55 55 55);;
+}
+
+* {
+    color: white;
+    margin: 0;
+}
+
+body {
+    background-color: darkgrey;
+    font-family: "Rubik Pixels", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.display {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: calc(50vw - (var(--size) / 2));
+    top: calc(50vh - (var(--size) / 2));
+    width: var(--size);
+    height: var(--size);
+    border: 10px solid var(--bord-border-color);
+    background-color: rgb(44, 44, 44);
+}
+
+.display .view.view__game .even-line,
+.display .view.view__game .even-line,
+.display .view.view__game .even-line,
+.display .view.view__game .odd-line {
+    display: flex;
+    flex: 1;
+    height: calc(var(--size) / 8);
+}
+
+
+.display .view.view__game .even-line .odd-position,
+.display .view.view__game .odd-line .odd-position,
+.display .view.view__game .odd-line .even-position {
+    background-color: var(--odd-color);
+    flex: 0 0 calc(var(--size) / 8)
+}
+
+.display .view.view__game .odd-line .odd-position,
+.display .view.view__game .even-position,
+.display .view.view__game .even-position {
+    background-color: var(--even-color);
+    flex: 0 0 calc(var(--size) / 8)
+}
+
